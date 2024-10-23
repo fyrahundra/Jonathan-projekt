@@ -1,9 +1,6 @@
-
 <script>
 	let mittNamn = "Jonathan Karlgren"
 </script>
-
-
 
 <!--Delar upp sidan i två delar-->
 <main>
