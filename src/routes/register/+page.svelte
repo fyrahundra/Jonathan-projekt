@@ -1,6 +1,7 @@
 <script>    
     import {users_store} from "$lib/user";
     import { onMount } from 'svelte';
+    import { base } from '$app/paths';
 
     let users = [];
     let colors = [{name: "Blå", value: "blue"},{name: "Röd", value: "red"}]
@@ -63,7 +64,7 @@
 
             <input type="submit" value="Registrera">
         </form>
-        <h1>Har du redan ett konto? <a href="/login" class="linkText">Logga in!</a></h1>
+        <h1>Har du redan ett konto? <a href="{base}/login" class="linkText">Logga in!</a></h1>
     </div>
 
 </main>

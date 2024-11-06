@@ -1,6 +1,7 @@
 <script>
     import {users_store} from "$lib/user";
     import { onMount } from 'svelte';
+    import { base } from '$app/paths';
     
     let users = [];
 
@@ -19,7 +20,7 @@
             let userInfo = users.filter(users => users.email === epost)
             if(userInfo.length > 0 && userInfo[0].password === lösenord){ 
                 /*hittar ett konto*/
-                    alert("Välkommen " + userInfo[0].username)
+                alert("Välkommen " + userInfo[0].username)
             }
             else{
                 /*hittar inget konto*/
@@ -46,7 +47,7 @@
 
             <input type="submit" value="Logga in">
         </form>
-        <h1 >Har du inte ett konto? <a href="/register" class="linkText">Skapa ett!</a></h1>
+        <h1 >Har du inte ett konto? <a href="{base}/register" class="linkText">Skapa ett!</a></h1>
     </div>
 
 </main>
