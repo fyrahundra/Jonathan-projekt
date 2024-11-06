@@ -23,7 +23,7 @@
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 </script>
 
-<nav>
+<nav class="navBar">
 	<a href="{base}/">Hem</a>
 	<a href="{base}/photoapp">Photo App</a>
 	<a href="{base}/register">Register</a>
@@ -36,7 +36,22 @@
 	padding: 0%;
 	height: 100vh;
 	width: 100vw;
-	}    
+	}   
+	
+	.navBar{
+		display: flex;
+		justify-content: space-evenly;
+		background-color: black;
+	}
+
+	.navBar a:hover{
+		font-size:larger;
+		font-style:italic;
+		color: rgb(75, 106, 132);
+	}
+	.navBar a:active{
+		color: rgb(112, 159, 200);
+	}
 
 </style>
 
