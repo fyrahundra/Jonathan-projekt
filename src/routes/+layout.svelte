@@ -26,6 +26,18 @@
 <nav>
 	<a href="{base}/">Hem</a>
 	<a href="{base}/photoapp">Photo App</a>
+	<a href="{base}/register">Register</a>
+	<a href="{base}/login">Login</a>
 </nav>
+
+<style>
+	:global(body), :global(html){
+	margin: 0%;
+	padding: 0%;
+	height: 100vh;
+	width: 100vw;
+	}    
+
+</style>
 
 <slot />
