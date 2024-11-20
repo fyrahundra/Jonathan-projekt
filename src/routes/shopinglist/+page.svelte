@@ -5,7 +5,7 @@
         return a.priority - b.priority
     })
 
-    let varor = [{name: "Mjölk", type: "Köpa", priority: 0},{name: "Kött", type: "Köpa", priority: 0}]
+    let varor = []
     let item
 
     function addBuyItem(){
