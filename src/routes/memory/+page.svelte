@@ -35,6 +35,7 @@
         noWin = false
 
         cards = []
+        flipCount = 0
 
         cardFront = shuffleArray(cardFront)
         

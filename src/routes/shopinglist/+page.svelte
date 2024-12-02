@@ -11,7 +11,7 @@
     function addBuyItem(){
         item = item.trim()
         if (item.length !== 0){
-            varor = [...varor,{name:item, type:"Köpa", priority: 0}]
+            varor = [...varor,{name:item, type:"Köpa", priority: varor.length+1}]
             item = ""
         }
     }
@@ -32,22 +32,16 @@
     }
 
     function changePriorityDown(target){
-        if(target.priority >= 10){
-            target.priority += 0
-        }
-        else{
-            target.priority += 1
-        }
+        let remember = varor[varor.indexOf(target)+1].priority
+        varor[varor.indexOf(target)+1].priority = target.priority
+        target.priority = remember
         varor = varor
     }
 
     function changePriorityUp(target){
-        if(target.priority <= 0){
-            target.priority -= 0
-        }
-        else{
-            target.priority -= 1
-        }
+        let remember = varor[varor.indexOf(target)-1].priority
+        varor[varor.indexOf(target)-1].priority = target.priority
+        target.priority = remember
         varor = varor
     }
 </script>
