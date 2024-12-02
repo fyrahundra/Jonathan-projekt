@@ -68,7 +68,7 @@
                         {/if }
                     {/each}
                 </ol>
-            <form action="" on:submit={addBuyItem} class="text">
+            <form on:submit|preventDefault={addBuyItem} class="text">
                 <input type="text" bind:value={item}>
                 <input type="submit" value="Add">
             </form>
