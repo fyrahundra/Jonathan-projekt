@@ -9,6 +9,7 @@
     let item
 
     function addBuyItem(){
+        item = item.trim()
         if (item.length !== 0){
             varor = [...varor,{name:item, type:"Köpa", priority: 0}]
             item = ""
