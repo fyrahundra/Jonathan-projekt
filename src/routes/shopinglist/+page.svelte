@@ -115,6 +115,8 @@
         grid-template-columns: repeat(2,1fr);
 
         column-gap: 10px;
+
+        overflow: hidden;
     }
 
     .a{
@@ -153,10 +155,12 @@
     
     .catagories_container section:last-child{  /* vilket barn vill vi styla? */
         background-color: rgba(0, 0, 0, 0.1); /* svart bakgrund med 10% opacitet */
+        overflow-y: scroll;
     }
 
     .catagories_container section:first-child{  /* vilket barn vill vi styla? */
-        background-color: rgba(0, 0, 0, 0.3) /* svart bakgrund med 30% opacitet */
+        background-color: rgba(0, 0, 0, 0.3); /* svart bakgrund med 30% opacitet */
+        overflow-y: scroll;
     }
 
     .catagories_container section h2{

@@ -40,9 +40,9 @@
         cardFront = shuffleArray(cardFront)
         
         for(let i = 0; i <cardFront.length; i++){
-        let newFront = cardFront[i]
-        cards.push({image: newFront, flipped: false, matched: false})
-        cards = cards
+            let newFront = cardFront[i]
+            cards.push({image: newFront, flipped: false, matched: false})
+            cards = cards
         }
     }
     startGame()

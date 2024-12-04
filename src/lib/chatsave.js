@@ -3,14 +3,14 @@ import { writable } from "svelte/store";
 
 
 /* initialize the users to "" if the users has not already been stored */
-const users = browser ? window?.localStorage.getItem('users') ?? "" : ""
+const chat = browser ? window?.localStorage.getItem('chat') ?? "" : ""
 
-export const users_store = writable(users)
+export const chat_store = writable(chat)
 
 if (browser) {
         /* https://svelte.dev/tutorial/auto-subscriptions */
-        users_store.subscribe((value) => {
+        chat_store.subscribe((value) => {
                 /* on changes to the users_store, update the localStorage in the browser. */
-                window?.localStorage.setItem('users', value);
+                window?.localStorage.setItem('chat', value);
         })
 }
