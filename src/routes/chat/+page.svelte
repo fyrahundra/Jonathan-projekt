@@ -11,10 +11,7 @@
     let answer = ""
 
     onMount(() => {
-    /*Check if has more then 2 characters*/
-    if($chat_store.length > 2){
         chat = JSON.parse($chat_store);
-    }
     });
 
     async function write(message) {
