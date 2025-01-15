@@ -48,7 +48,7 @@
 <img src="https://i.pinimg.com/originals/9e/39/23/9e3923825ba4a4fa967858f980b8460f.png" alt="Pokemon logo" class="img">
 <main>
     <div class="a">
-        <form on:submit|preventDefault={()=> goto('/search/'+search)} class="searchbox">
+        <form on:submit|preventDefault={()=> goto(base+'/search/'+search)} class="searchbox">
             <input type="text" placeholder="Sök upp en pokemon" bind:value={search} on:click={toggleSearch}/>
         </form>
         
