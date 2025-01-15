@@ -15,9 +15,9 @@
         }
     });
 
-    async function addLink(weightInfo){
+    async function addLink(weightInfo, nameInfo){
         await onMount
-        let searchTarget = $page.params.pokemon
+        let searchTarget = nameInfo
         searchedItem = searchedItem.filter(item => item.name !== searchTarget)  //filtrerar bort alla återkommande sökningar
 
         if (searchedItem.length == 5){
@@ -25,7 +25,7 @@
                 searchedItem = searchedItem
             }
         
-        searchedItem = [...searchedItem, {link: base + "/search/" + $page.params.pokemon.toLowerCase(), name: $page.params.pokemon, weight: weightInfo}]
+        searchedItem = [...searchedItem, {link: base + "/search/" + $page.params.pokemon.toLowerCase(), name: nameInfo, weight: weightInfo}]
         $search_store = JSON.stringify(searchedItem);
         console.log(searchedItem.length)
     }
@@ -36,7 +36,7 @@
     <p>.. waiting</p>
     {:then pokemon}
     <div style="display: none;">
-        {addLink(pokemon.response.weight)}
+        {addLink(pokemon.response.weight, pokemon.response.name)}
     </div>
     <a href="{base}/search/" class="home">← Home</a>
     <p style="color: black;" class="name">{pokemon.response.name}</p>
