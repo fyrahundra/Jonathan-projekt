@@ -126,5 +126,6 @@
 
     .reset :hover{
         transform: scale(1.1);
+        background-color: red;
     }
 </style>
