@@ -24,6 +24,8 @@
         margin: 5vh auto;
 
         border-radius: 10px;
+
+        border: solid black 10px;
     }
 
     .backdrop{

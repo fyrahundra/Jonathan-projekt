@@ -15,7 +15,7 @@
         }
     });
 
-    async function addLink(weightInfo, nameInfo){
+    async function addLink(weightInfo, nameInfo, idInfo){
         await onMount
         let searchTarget = nameInfo
         searchedItem = searchedItem.filter(item => item.name !== searchTarget)  //filtrerar bort alla återkommande sökningar
@@ -24,8 +24,8 @@
                 searchedItem.shift()
                 searchedItem = searchedItem
             }
-        
-        searchedItem = [...searchedItem, {link: base + "/search/" + $page.params.pokemon.toLowerCase(), name: nameInfo, weight: weightInfo}]
+
+        searchedItem = [...searchedItem, {link: base + "/search/" + $page.params.pokemon.toLowerCase(), name: nameInfo, weight: weightInfo, id: idInfo}]
         $search_store = JSON.stringify(searchedItem);
         console.log(searchedItem.length)
     }
@@ -36,10 +36,10 @@
     <p>.. waiting</p>
     {:then pokemon}
     <div style="display: none;">
-        {addLink(pokemon.response.weight, pokemon.response.name)}
+        {addLink(pokemon.response.weight, pokemon.response.name,pokemon.response.id)}
     </div>
     <a href="{base}/search/" class="home">← Home</a>
-    <p style="color: black;" class="name">{pokemon.response.name}</p>
+    <p style="color: black;" class="name">{pokemon.response.name} #{pokemon.response.id}</p>
     <article style="overflow: scroll;">
         {#each Object.entries(pokemon.response.sprites) as sprites}
             {#if typeof sprites[1] == "string"}
@@ -105,22 +105,16 @@
     .grid{
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(5, 20%);
         overflow-y: scroll;
-
-        align-items: center;
-        justify-content: center;
     }
 
     .moves{
-        width: 100%;
-        height: 100%;
         background-color: rgb(83, 83, 192);
-        padding: 10px;
-
+        padding: 15px;
+        border-radius: 10px;   
         justify-content: center;
-
-        border-radius: 10px;
+        align-items: center;
     }
 
     .types{
