@@ -2,7 +2,7 @@
     /** @type {import('./$types').PageData} */
     export let data;
 
-    import { base, base } from '$app/paths';
+    import { base } from '$app/paths';
     import {search_store} from "$lib/searchsave";
     import { onMount } from 'svelte';
 	import { page } from '$app/stores';
