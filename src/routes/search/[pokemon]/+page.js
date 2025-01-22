@@ -10,6 +10,10 @@ export const prerender = false
 export async function load({ params, fetch }) {
     /* params.pokemon matches to the [pokemon] in the filesystem */
     /* for example navigating to /search/pikachu in this example will put pikachu in params.pokemon */
+    if(params == "search"){
+        params = null
+    }
+
     params.pokemon = params.pokemon.toLowerCase();
 
     console.log(params.pokemon);
