@@ -27,7 +27,7 @@
 
         searchedItem = [...searchedItem, {link: base + "/search/" + $page.params.pokemon.toLowerCase(), name: nameInfo, weight: weightInfo, id: idInfo}]
         $search_store = JSON.stringify(searchedItem);
-        //console.log(searchedItem.length)
+        console.log(searchedItem.length)
     }
 
 </script>
