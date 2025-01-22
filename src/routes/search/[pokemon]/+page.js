@@ -25,7 +25,7 @@ export async function load({ params, fetch }) {
     }
     
     let data = await response.json(); // parses JSON response into native JavaScript objects
-    console.log(data);
+    //console.log(data);
     return { params, response: data }; 
 
 }
