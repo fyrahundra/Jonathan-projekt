@@ -1,6 +1,6 @@
 <script>
     /** @type {import('./$types').PageData} */
-    export let data;
+    //export let data;
 
     import { base } from '$app/paths';
     import {search_store} from "$lib/searchsave";
