@@ -77,7 +77,7 @@
 <main>
     <div class="layerCorrect">
         <div style="color: black;">Suggestion: {finalResult[0]}</div>
-        <form on:submit|preventDefault={()=> goto(base+'/search/'+{search})} class="searchbox">
+        <form on:submit|preventDefault={()=> goto(base+'/search/'+search)} class="searchbox">
             <input type="text" placeholder="Sök upp en pokemon" bind:value={search}  on:click={toggleSearch} on:input={filterSearch}/>
         </form>
         <div>
