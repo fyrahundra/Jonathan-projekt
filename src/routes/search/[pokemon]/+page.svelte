@@ -2,7 +2,7 @@
     /** @type {import('./$types').PageData} */
     export let data;
 
-    import { base } from '$app/paths';
+    import { base, base } from '$app/paths';
     import {search_store} from "$lib/searchsave";
     import { onMount } from 'svelte';
 	import { page } from '$app/stores';
@@ -38,6 +38,7 @@
     <div style="display: none;">
         {addLink(pokemon.response.weight, pokemon.response.name,pokemon.response.id)}
     </div>
+    <base href="https://fyrahundra.github.io/Jonathan-projekt/">
     <a href="{base}/search/" class="home">← Home</a>
     <p style="color: black;" class="name">{pokemon.response.name} #{pokemon.response.id}</p>
     <article style="overflow: scroll;">
