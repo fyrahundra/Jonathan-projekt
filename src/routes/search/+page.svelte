@@ -70,6 +70,8 @@
         finalResult = filter.filter(name => name.toLowerCase().includes(search.toLowerCase()))
         if(!search.trim()){
             finalResult = []
+        }
+        if(finalResult[0] == undefined){
             detectable = "none"
         }
         else{
