@@ -26,13 +26,13 @@
 </script>
 
 <nav class="navBar">
-	<a href="https://fyrahundra.github.io/Jonathan-projekt/">Hem</a>
-	<a href="https://fyrahundra.github.io/Jonathan-projekt/photoapp">Photo App</a>
-	<a href="https://fyrahundra.github.io/Jonathan-projekt/register">Register</a>
-	<a href="https://fyrahundra.github.io/Jonathan-projekt/login">Login</a>
-	<a href="https://fyrahundra.github.io/Jonathan-projekt/shopinglist">Shoppinglist</a>
-	<a href="https://fyrahundra.github.io/Jonathan-projekt/memory">Memory</a>
-	<a href="https://fyrahundra.github.io/Jonathan-projekt/search">Search</a>
+	<a href="{base}/">Hem</a>
+	<a href="{base}/photoapp">Photo App</a>
+	<a href="{base}/register">Register</a>
+	<a href="{base}/login">Login</a>
+	<a href="{base}/shopinglist">Shoppinglist</a>
+	<a href="{base}/memory">Memory</a>
+	<a href="{base}/search">Search</a>
 </nav>
 
 <style>

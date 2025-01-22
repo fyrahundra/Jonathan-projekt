@@ -1,1 +1,0 @@
-import{w as s}from"./paths.D6v8ApSN.js";import{H as o}from"./entry.Dt_h8iAP.js";const t=(window==null?void 0:window.sessionStorage.getItem("search"))??"",a=s(t);a.subscribe(e=>{window==null||window.sessionStorage.setItem("search",e)});function i(e,r){throw new o(e,r)}new TextEncoder;export{i as e,a as s};
