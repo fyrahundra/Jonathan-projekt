@@ -9,6 +9,7 @@
     let searchedItem = []
 
     let visible = "none"
+    let detectable = "none"
     let show = false
 
     let pokemons = []
@@ -69,6 +70,10 @@
         finalResult = filter.filter(name => name.toLowerCase().includes(search.toLowerCase()))
         if(!search.trim()){
             finalResult = []
+            detectable = "none"
+        }
+        else{
+            detectable = "block"
         }
     }
 </script>
@@ -76,7 +81,7 @@
 <img src="https://i.pinimg.com/originals/9e/39/23/9e3923825ba4a4fa967858f980b8460f.png" alt="Pokemon logo" class="img">
 <main>
     <div class="layerCorrect">
-        <div style="color: black">Suggestion: <a href="{base}/search/{finalResult[0]}" style="color: blue">{finalResult[0]}</a></div>
+        <div class="autocomplite">Suggestion: <a href="{base}/search/{finalResult[0]}" class="suggestion" style="display: {detectable};">{finalResult[0]}</a></div>
         <form on:submit|preventDefault={()=> goto(base+'/search/' + search) } class="searchbox">
             <input type="text" placeholder="Sök upp en pokemon" bind:value={search} on:click={toggleSearch} on:input={filterSearch}/>
         </form>
@@ -151,5 +156,14 @@
 
         border: solid burlywood 2px;
         border-radius: 10px;
+    }
+    .suggestion{
+        color: blue;
+        margin-left: 1%;
+        text-transform: capitalize;
+    }
+    .autocomplite{
+        color: black;
+        display: flex;
     }
 </style>
