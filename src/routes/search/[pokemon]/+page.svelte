@@ -38,7 +38,6 @@
     <div style="display: none;">
         {addLink(pokemon.response.weight, pokemon.response.name,pokemon.response.id)}
     </div>
-    <base href="https://fyrahundra.github.io/Jonathan-projekt/">
     <a href="{base}/search/" class="home">← Home</a>
     <p style="color: black;" class="name">{pokemon.response.name} #{pokemon.response.id}</p>
     <article style="overflow: scroll;">
