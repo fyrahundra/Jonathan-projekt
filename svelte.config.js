@@ -17,6 +17,7 @@ const config = {
 			assets: 'docs',
 			fallback: "404.hmtl"
 		}),
+		base : 'https://fyrahundra.github.io/Jonathan-projekt'
 		
 	},
 };

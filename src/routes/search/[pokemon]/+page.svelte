@@ -13,7 +13,6 @@
         if($search_store.length > 2){
             searchedItem = JSON.parse($search_store)
         }
-        base = 'https://fyrahundra.github.io/Jonathan-projekt'
     });
 
     async function addLink(weightInfo, nameInfo, idInfo){
