@@ -13,6 +13,7 @@
         if($search_store.length > 2){
             searchedItem = JSON.parse($search_store)
         }
+        console.log(base)
     });
 
     async function addLink(weightInfo, nameInfo, idInfo){

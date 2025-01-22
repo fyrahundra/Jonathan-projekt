@@ -17,7 +17,6 @@ const config = {
 			assets: 'docs',
 			fallback: "404.hmtl"
 		}),
-		
 	},
 };
 
