@@ -1,6 +1,6 @@
 <script>
     /** @type {import('./$types').PageData} */
-    //export let data;
+    export let data;
 
     import { base } from '$app/paths';
     import {search_store} from "$lib/searchsave";
@@ -13,6 +13,7 @@
         if($search_store.length > 2){
             searchedItem = JSON.parse($search_store)
         }
+        base = 'https://fyrahundra.github.io/Jonathan-projekt'
     });
 
     async function addLink(weightInfo, nameInfo, idInfo){
