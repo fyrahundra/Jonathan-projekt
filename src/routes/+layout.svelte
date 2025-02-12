@@ -35,6 +35,7 @@
 	<a href="{base}/chat">Chat bot</a>
 	<a href="{base}/search">Search</a>
 	<a href="{base}/bad-login">Bad Login</a>
+	<a href="{base}/Spel">Spel</a>
 </nav>
 
 <style>
