@@ -341,6 +341,8 @@
             justify-content: space-evenly;
             align-items: center;
 
+            z-index: 5;
+
             position: absolute;
         }
         .checkout{
