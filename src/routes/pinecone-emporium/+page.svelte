@@ -329,7 +329,8 @@
             font-size: small;
             left: 67%;
         }
-
+    }
+    @media screen and (min-width: 320px){
         .bar{
             background-color: rgb(1, 98, 1);
             height: 7%;
