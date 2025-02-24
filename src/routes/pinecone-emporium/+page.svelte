@@ -432,7 +432,7 @@
 
             position: absolute;
 
-            left: 85%;
+            left: 83%;
             top: 2%;
         }
         .info{
