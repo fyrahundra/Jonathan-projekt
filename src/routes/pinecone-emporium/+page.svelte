@@ -330,8 +330,53 @@
             font-size: small;
             left: 67%;
         }
+        .bar{
+            background-color: rgb(1, 98, 1);
+            height: 7%;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 10fr 0.3fr 1fr 0.5fr 2fr 0.25fr;
+            justify-content: space-evenly;
+            align-items: center;
+
+            z-index: 5;
+
+            position: absolute;
+        }
+        .checkout{
+            background-color: rgb(64, 111, 113); 
+            border-radius: 0px 0px 10px 10px; 
+            position:absolute; 
+            width: 100%;
+            top: 75%;
+            height: 80%;
+        }
+        .shop{
+            background-color: rgba(0, 0, 0, 0.7);
+            width: 100%;
+            height: 100%;
+
+            overflow-y: scroll;
+            overflow-x: hidden;
+
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .container{
+            display: grid;
+            width: 100%;
+            grid-template-columns: repeat(4,1fr);
+            gap: 10px;
+            margin-top: 10px;
+            top: 10%;
+            text-align: center;
+            position: relative;
+
+            justify-content: center;
+        }
     }
-    @media screen and (min-width: 320px){
+    @media screen and (max-width: 480px){
         .bar{
             background-color: rgb(1, 98, 1);
             height: 7%;
