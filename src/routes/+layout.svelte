@@ -66,7 +66,7 @@
 	
 	.navBar{
 		display: flex;
-		width: 100%;
+		width: 100vw;
 		height: 4.5%;
 		align-items: center;
 		justify-content: space-evenly;
@@ -74,7 +74,7 @@
 
 		position: absolute;
 		top: 0%;
-		z-index: 10;
+		z-index: 11;
 	}
 
 	.navBar a:hover{

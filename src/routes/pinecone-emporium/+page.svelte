@@ -190,8 +190,6 @@
         grid-template-columns: 10fr 0.3fr 1fr 0.5fr 2fr 0.25fr;
         align-items: center;
 
-        z-index: 11;
-
         position: relative;
     }
 
@@ -331,15 +329,15 @@
             font-size: small;
             left: 67%;
         }
+
         .bar{
             background-color: rgb(1, 98, 1);
-            height: 12%;
+            height: 7%;
             width: 100vw;
             display: grid;
             grid-template-columns: 10fr 0.3fr 1fr 0.5fr 2fr 0.25fr;
+            justify-content: space-evenly;
             align-items: center;
-
-            z-index: 11;
 
             position: absolute;
         }
