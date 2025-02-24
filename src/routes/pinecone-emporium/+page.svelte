@@ -279,8 +279,8 @@
         position: relative;
 
         justify-content: center;
-
     }
+
     .kotte{
         width: 100px;
         height: 100px;
@@ -354,7 +354,7 @@
         .shop{
             background-color: rgba(0, 0, 0, 0.7);
             width: 100%;
-            height: 70%;
+            height: 100%;
 
             overflow-y: scroll;
             overflow-x: hidden;
@@ -362,6 +362,18 @@
             align-items: center;
             display: flex;
             flex-direction: column;
+        }
+        .container{
+            display: grid;
+            width: 100%;
+            grid-template-columns: repeat(4,1fr);
+            gap: 10px;
+            margin-top: 10px;
+            top: 10%;
+            text-align: center;
+            position: relative;
+
+            justify-content: center;
         }
     }
 </style>
