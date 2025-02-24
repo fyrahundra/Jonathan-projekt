@@ -182,6 +182,7 @@
         display: flex;
         flex-direction: column;
     }
+
     .bar{
         background-color: rgb(1, 98, 1);
         height: 5%;
@@ -349,6 +350,18 @@
             width: 100%;
             top: 75%;
             height: 80%;
+        }
+        .shop{
+            background-color: rgba(0, 0, 0, 0.7);
+            width: 100%;
+            height: 70%;
+
+            overflow-y: scroll;
+            overflow-x: hidden;
+
+            align-items: center;
+            display: flex;
+            flex-direction: column;
         }
     }
 </style>
