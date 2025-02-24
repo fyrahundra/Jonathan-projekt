@@ -432,7 +432,7 @@
 
             position: absolute;
 
-            left: 89%;
+            left: 85%;
             top: 2%;
         }
         .info{
@@ -441,11 +441,11 @@
         }
         .divider1{
             position: absolute;
-            left:65%;
+            left:59%;
         }
         .divider2{
             position: absolute;
-            left:83%;
+            left:79%;
         }
         .title{
             text-align: center; 
