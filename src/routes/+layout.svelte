@@ -23,9 +23,26 @@
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 
 	console.log(base)
+
+	let visible = false;
+
+	function toggle(){
+		visible = !visible
+	}
 </script>
 
-<nav class="navBar">
+<!-- svelte-ignore a11y-click-events-have-key-events -->
+<!-- svelte-ignore a11y-no-static-element-interactions -->
+<button on:click={toggle} class="arrow">
+	{#if visible}
+	↑
+	{/if}
+	{#if !visible}
+	↓
+	{/if}
+</button>
+
+<nav id="Bar" class="navBar" style="display: {visible ? "flex" : "none"};">
 	<a href="{base}/">Hem</a>
 	<a href="{base}/photoapp">Photo App</a>
 	<a href="{base}/register">Register</a>
@@ -36,20 +53,28 @@
 	<a href="{base}/search">Search</a>
 	<a href="{base}/bad-login">Bad Login</a>
 	<a href="{base}/Spel">Spel</a>
+	<a href="{base}/pinecone-emporium">Pinecone Emporium</a>
 </nav>
 
 <style>
 	:global(body), :global(html){
 	margin: 0%;
-	padding: 0%;
-	height: 100vh;
-	width: 100vw;
+	padding: 0%;;
+	height: 100%;
+	width: 100%;
 	}   
 	
 	.navBar{
 		display: flex;
+		width: 100%;
+		height: 4.5%;
+		align-items: center;
 		justify-content: space-evenly;
 		background-color: black;
+
+		position: absolute;
+		top: 0%;
+		z-index: 10;
 	}
 
 	.navBar a:hover{
@@ -59,6 +84,16 @@
 	}
 	.navBar a:active{
 		color: rgb(112, 159, 200);
+	}
+
+	.arrow{
+		height:max-content;
+		width:25px; 
+		top: 0.7%;
+		border-radius:50%; 
+		background-color:black; 
+		position:absolute; 
+		z-index:11;
 	}
 
 </style>
