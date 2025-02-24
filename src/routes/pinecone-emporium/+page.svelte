@@ -428,7 +428,7 @@
             justify-content: center;
         }
         .shoppingCart{
-            width: 5%;
+            width: 10%;
             height: 99%;
 
             position: absolute;
@@ -442,13 +442,13 @@
         }
         .divider2{
             position: absolute;
-            left:85%;
+            left:82%;
         }
         .title{
             text-align: center; 
 
             position:absolute;
-            left: 0%;
+            left: 5%;
         }
     }
 </style>
