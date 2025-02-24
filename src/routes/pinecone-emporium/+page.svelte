@@ -396,7 +396,7 @@
             position:absolute; 
             width: 100%;
             top: 75%;
-            height: 20%%;
+            height: 20%;
         }
         .shop{
             background-color: rgba(0, 0, 0, 0.7);
