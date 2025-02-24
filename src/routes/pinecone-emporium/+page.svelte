@@ -387,7 +387,7 @@
             height: 7%;
             width: 100vw;
             display: grid;
-            grid-template-columns: 6fr 0.3fr 1fr 0.5fr 2fr 0.25fr;
+            grid-template-columns: 3fr 0.3fr 1fr 0.5fr 2fr 0.25fr;
             align-items: center;
 
             z-index: 5;
