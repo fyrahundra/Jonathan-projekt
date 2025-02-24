@@ -387,7 +387,7 @@
             height: 7%;
             width: 100vw;
             display: grid;
-            grid-template-columns: 1fr 0.3fr 1fr 0.5fr 2fr 0.25fr;
+            grid-template-columns: 3fr 0.3fr 1fr 0.5fr 2fr 0.25fr;
             align-items: center;
 
             z-index: 5;
@@ -434,6 +434,10 @@
 
             left: 89%;
             top: 2%;
+        }
+        .info{
+            font-size: small;
+            left: 62%;
         }
         .divider1{
             position: absolute;
