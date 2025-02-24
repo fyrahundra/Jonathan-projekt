@@ -376,7 +376,7 @@
             justify-content: center;
         }
     }
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 700px){
         .bar{
             background-color: rgb(1, 98, 1);
             height: 7%;
@@ -396,7 +396,7 @@
             position:absolute; 
             width: 100%;
             top: 75%;
-            height: 80%;
+            height: 20%%;
         }
         .shop{
             background-color: rgba(0, 0, 0, 0.7);
