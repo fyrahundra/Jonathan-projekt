@@ -387,7 +387,7 @@
             height: 7%;
             width: 100vw;
             display: grid;
-            grid-template-columns: 10fr 0.3fr 1fr 0.5fr 2fr 0.25fr;
+            grid-template-columns: 6fr 0.3fr 1fr 0.5fr 2fr 0.25fr;
             justify-content: space-evenly;
             align-items: center;
 
@@ -442,13 +442,13 @@
         }
         .divider2{
             position: absolute;
-            left:82%;
+            left:83%;
         }
         .title{
             text-align: center; 
 
             position:absolute;
-            left: 5%;
+            left: 7%;
         }
     }
 </style>
