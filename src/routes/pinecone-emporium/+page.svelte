@@ -99,11 +99,11 @@
         <!-- svelte-ignore a11y-no-static-element-interactions -->
         <div class="bar">
             <h1 class="title">Pinecone Emporium</h1>
-            <p class="divider" style="left:65%;">|</p>
+            <p class="divider1">|</p>
             <div class="info">
                 <a href="{base}/pinecone-about-us">About us</a>
             </div>
-            <p class="divider" style="left:80%;">|</p>
+            <p class="divider2">|</p>
             <!-- svelte-ignore a11y-no-static-element-interactions -->
             <!-- svelte-ignore a11y-click-events-have-key-events -->
             <button on:click={() => showCart()}>
@@ -201,8 +201,13 @@
         left: 30%;
     }
 
-    .divider{
+    .divider1{
         position: absolute;
+        left:65%;
+    }
+    .divider2{
+        position: absolute;
+        left:80%;
     }
 
     .info{
@@ -421,6 +426,29 @@
             position: relative;
 
             justify-content: center;
+        }
+        .shoppingCart{
+            width: 5%;
+            height: 99%;
+
+            position: absolute;
+
+            left: 89%;
+            top: 2%;
+        }
+        .divider1{
+            position: absolute;
+            left:65%;
+        }
+        .divider2{
+            position: absolute;
+            left:85%;
+        }
+        .title{
+            text-align: center; 
+
+            position:absolute;
+            left: 0%;
         }
     }
 </style>
