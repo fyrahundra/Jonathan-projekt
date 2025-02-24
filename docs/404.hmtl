@@ -5,27 +5,27 @@
 		<link rel="icon" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		
-		<link rel="modulepreload" href="/_app/immutable/entry/start.DoYjJRfu.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/entry.jvo6fXt5.js">
+		<link rel="modulepreload" href="/_app/immutable/entry/start.CEPrwOGU.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/entry.DJeutR0P.js">
 		<link rel="modulepreload" href="/_app/immutable/chunks/scheduler.BpkR8Ea4.js">
 		<link rel="modulepreload" href="/_app/immutable/chunks/index.vx2xc_C0.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/paths.Db9nvz4K.js">
-		<link rel="modulepreload" href="/_app/immutable/entry/app.9MvKw-mv.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/paths.4jXwgKgd.js">
+		<link rel="modulepreload" href="/_app/immutable/entry/app.CH6dzaHc.js">
 		<link rel="modulepreload" href="/_app/immutable/chunks/index.D8T7LVfr.js">
 	</head>
 	<body data-sveltekit-preload-data="hover" data-theme="skeleton">
 		<div style="display: contents">
 			<script>
 				{
-					__sveltekit_nngfg6 = {
+					__sveltekit_oaa1i6 = {
 						base: ""
 					};
 
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("/_app/immutable/entry/start.DoYjJRfu.js"),
-						import("/_app/immutable/entry/app.9MvKw-mv.js")
+						import("/_app/immutable/entry/start.CEPrwOGU.js"),
+						import("/_app/immutable/entry/app.CH6dzaHc.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element);
 					});

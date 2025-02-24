@@ -93,7 +93,7 @@
 		border-radius:50%; 
 		background-color:black; 
 		position:absolute; 
-		z-index:11;
+		z-index:12;
 	}
 
 </style>

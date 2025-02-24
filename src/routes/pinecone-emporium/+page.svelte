@@ -1,6 +1,7 @@
 <script>
     import { base } from '$app/paths';
 
+
     let kottar = [
         {name: "Tallkotte", price: 60, img: "https://img.fruugo.com/product/5/27/1700472275_0340_0340.jpg", amount: 1},
         {name: "Stor Tallkotte", price: 100, img: "https://www.kransmakaren.se/bilder/artiklar/7133.jpg?m=1710277924", amount: 1},
@@ -93,7 +94,6 @@
     }
 </script>
 
-
 <main class="backdrop">
     <div class="shop">
         <!-- svelte-ignore a11y-no-static-element-interactions -->
@@ -121,7 +121,7 @@
         </div>
 
         <div class="shoppingList" style="display: {visibleList ? 'block' : 'none'};">
-            <div style="height: 75%; overfill-y: scroll; margin-top: 10px; overflow-y: scroll; position:relative;">
+            <div style="height: 75%; overfill-y: scroll; margin-top: 10px; position:absolute;">
                 {#each cart as item}
                     <div style="display:flex; flex-direction:row; justify-content: space-around;">
                         <img src={item.img} alt={item.name} style="width: 50px; height: 50px;">
@@ -138,7 +138,7 @@
                 {/each}
             </div>
             
-            <div style="background-color: rgb(64, 111, 113); border-radius: 0px 0px 10px 10px; position:absolute; width: 100%;">
+            <div class="checkout">
                 <h1>Total: 
                     <p>{total}kr</p>
                 </h1>
@@ -184,11 +184,13 @@
     }
     .bar{
         background-color: rgb(1, 98, 1);
-        height: 35px;
+        height: 5%;
         width: 100%;
         display: grid;
         grid-template-columns: 10fr 0.3fr 1fr 0.5fr 2fr 0.25fr;
         align-items: center;
+
+        z-index: 11;
 
         position: relative;
     }
@@ -210,13 +212,13 @@
     }
 
     .shoppingCart{
-        width: 30px;
-        height: 30px;
+        width: 3%;
+        height: 99%;
 
         position: absolute;
 
         left: 89%;
-        top: 10%;
+        top: 2%;
     }
 
     .shoppingList{
@@ -229,7 +231,8 @@
         width: 50%;
         height: 41%;
         max-width: 300px;
-        max-height: 500px;
+        min-height: 41%;
+        max-height: 300px;
 
         right: 1%;
         top: 4%;
@@ -243,6 +246,15 @@
 
         position: absolute;
         z-index: 2;
+    }
+
+    .checkout{
+        background-color: rgb(64, 111, 113); 
+        border-radius: 0px 0px 10px 10px; 
+        position:absolute; 
+        width: 100%;
+        top: 75%;
+        height: 25%;
     }
 
     .change{
@@ -318,6 +330,26 @@
         .info{
             font-size: small;
             left: 67%;
+        }
+        .bar{
+            background-color: rgb(1, 98, 1);
+            height: 12%;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 10fr 0.3fr 1fr 0.5fr 2fr 0.25fr;
+            align-items: center;
+
+            z-index: 11;
+
+            position: absolute;
+        }
+        .checkout{
+            background-color: rgb(64, 111, 113); 
+            border-radius: 0px 0px 10px 10px; 
+            position:absolute; 
+            width: 100%;
+            top: 75%;
+            height: 80%;
         }
     }
 </style>
