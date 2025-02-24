@@ -433,7 +433,7 @@
             position: absolute;
 
             left: 83%;
-            top: 2%;
+            top: 4%;
         }
         .info{
             font-size: small;
