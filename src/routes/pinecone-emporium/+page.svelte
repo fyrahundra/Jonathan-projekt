@@ -428,7 +428,7 @@
         }
         .shoppingCart{
             width: 10%;
-            height: 99%;
+            height: 97%;
 
             position: absolute;
 
