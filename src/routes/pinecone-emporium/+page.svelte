@@ -120,8 +120,8 @@
             </button>
         </div>
 
-        <div class="shoppingList" style="display: {visibleList ? 'block' : 'none'};">
-            <div style="height: 75%; overfill-y: scroll; margin-top: 10px; position:absolute;">
+        <div class="shoppingList" style="display: {visibleList ? 'flex' : 'none'};">
+            <div style="height: 300px; overflow-y: scroll; margin-top: 10px;">
                 {#each cart as item}
                     <div style="display:flex; flex-direction:row; justify-content: space-around;">
                         <img src={item.img} alt={item.name} style="width: 50px; height: 50px;">
@@ -255,9 +255,7 @@
     .checkout{
         background-color: rgb(64, 111, 113); 
         border-radius: 0px 0px 10px 10px; 
-        position:absolute; 
         width: 100%;
-        top: 75%;
         height: 25%;
     }
 
