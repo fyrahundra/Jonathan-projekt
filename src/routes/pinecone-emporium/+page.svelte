@@ -139,10 +139,12 @@
             </div>
             
             <div class="checkout">
-                <h1>Total: 
-                    <p>{total}kr</p>
-                </h1>
-                <button style="background-color:green;" on:click={() => buy()}>Checkout</button>
+                <div class="phoneMod">
+                    <h1>Total: 
+                        <p>{total}kr</p>
+                    </h1>
+                    <button style="background-color:green;" on:click={() => buy()}>Checkout</button>
+                </div>
             </div>
         </div>
 
@@ -433,6 +435,10 @@
             width: 100%;
             top: 75%;
             height: 25%;
+        }
+
+        .phoneMod{
+            height: 70%;
         }
         
         .shop{
