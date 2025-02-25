@@ -442,6 +442,7 @@
             height: 70%; 
             overflow-y: scroll; 
             position: absolute;
+            top: 0%;
         }
 
         .phoneMod{
