@@ -439,8 +439,8 @@
 
         .phoneMod{
             position: absolute;
-            left: 50%;
-            height: 60%;
+            left: 40%;
+            height: 40%;
         }
         
         .shop{
