@@ -439,9 +439,8 @@
         }
 
         .shopItems{
-            height: 75%; 
+            height: 70%; 
             overflow-y: scroll; 
-            margin-top: 10px;
         }
 
         .phoneMod{
