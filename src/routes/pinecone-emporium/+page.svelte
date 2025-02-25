@@ -447,7 +447,7 @@
 
         .phoneMod{
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
         }
         
         .shop{
