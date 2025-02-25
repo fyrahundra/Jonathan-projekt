@@ -143,8 +143,9 @@
                     <h1>Total: 
                         <p>{total}kr</p>
                     </h1>
-                    <button style="background-color:green;" on:click={() => buy()}>Checkout</button>
                 </div>
+                    <button style="background-color:green;" on:click={() => buy()}>Checkout</button>
+                
             </div>
         </div>
 
@@ -441,6 +442,8 @@
             position: absolute;
             left: 40%;
             height: 40%;
+            display: flex;
+            flex-direction: row;
         }
         
         .shop{
