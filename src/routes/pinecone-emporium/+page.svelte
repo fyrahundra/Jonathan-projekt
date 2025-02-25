@@ -438,9 +438,13 @@
             height: 25%;
         }
 
+        .shopItems{
+            height: 75%; 
+            overflow-y: scroll; 
+            margin-top: 10px;
+        }
+
         .phoneMod{
-            left: 40%;
-            height: 40%;
             display: flex;
             flex-direction: column;
         }
