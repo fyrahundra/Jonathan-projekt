@@ -441,6 +441,7 @@
         .shopItems{
             height: 70%; 
             overflow-y: scroll; 
+            position: absolute;
         }
 
         .phoneMod{
