@@ -121,7 +121,7 @@
         </div>
 
         <div class="shoppingList" style="display: {visibleList ? 'flex' : 'none'};">
-            <div style="height: 300px; overflow-y: scroll; margin-top: 10px;">
+            <div class="shopItems">
                 {#each cart as item}
                     <div style="display:flex; flex-direction:row; justify-content: space-around;">
                         <img src={item.img} alt={item.name} style="width: 50px; height: 50px;">
@@ -250,6 +250,12 @@
 
         position: absolute;
         z-index: 2;
+    }
+
+    .shopItems{
+        height: 300px; 
+        overflow-y: scroll; 
+        margin-top: 10px;
     }
 
     .checkout{
@@ -392,14 +398,43 @@
 
             position: absolute;
         }
+
+        .shoppingList{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            text-align: center;
+
+            width: 50%;
+            height: 41%;
+            max-width: 300px;
+            min-height: 41%;
+            max-height: 300px;
+
+            right: 1%;
+            top: 4%;
+
+            margin-left: 60%;
+
+            background-color: rgb(64, 91, 113);
+
+            border-radius: 10px;
+            border: solid 2px white;
+
+            position: absolute;
+            z-index: 6;
+        }
+
         .checkout{
             background-color: rgb(64, 111, 113); 
             border-radius: 0px 0px 10px 10px; 
             position:absolute; 
             width: 100%;
             top: 75%;
-            height: 20%;
+            height: 25%;
         }
+        
         .shop{
             background-color: rgba(0, 0, 0, 0.7);
             width: 100%;
