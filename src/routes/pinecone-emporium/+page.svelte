@@ -438,6 +438,7 @@
         }
 
         .phoneMod{
+            position: absolute;
             height: 70%;
         }
         
