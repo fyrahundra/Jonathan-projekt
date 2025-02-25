@@ -139,13 +139,14 @@
             </div>
             
             <div class="checkout">
-                <div class="phoneMod">
-                    <h1>Total: 
-                        <p>{total}kr</p>
-                    </h1>
+                <div class="phoneMod2">
+                    <div class="phoneMod1">
+                        <h1>Total: 
+                            <p>{total}kr</p>
+                        </h1>
+                    </div>
+                        <button style="background-color:green;" on:click={() => buy()}>Checkout</button>
                 </div>
-                    <button style="background-color:green;" on:click={() => buy()}>Checkout</button>
-                
             </div>
         </div>
 
@@ -445,9 +446,14 @@
             top: 0%;
         }
 
-        .phoneMod{
+        .phoneMod1{
             display: flex;
             flex-direction: row;
+        }
+
+        .phoneMod2{
+            display: flex;
+            flex-direction: column;
         }
         
         .shop{
