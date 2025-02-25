@@ -439,11 +439,10 @@
         }
 
         .phoneMod{
-            position: absolute;
             left: 40%;
             height: 40%;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
         }
         
         .shop{
